@@ -1,34 +1,32 @@
 import axios from "axios";
 
+// Set your base API URL
+const BASE_URL = 'https://othtech-solution-server.onrender.com'; // render url
+// const BASE_URL = 'http://localhost:4000'; // local url
+
 export const signup = async ({ name, email, password }) => {
   try {
-    const { data } = await axios.post("/api/users/register", {
+    const { data } = await axios.post(`${BASE_URL}/api/users/register`, {
       name,
       email,
       password,
     });
     return data;
   } catch (error) {
-    // console.log(error.response.data);
-    if (error.response && error.response.data)
-      throw new Error(error.response.data);
-    throw new Error(error.response.data);
+    handleError(error);
   }
 };
 
 export const login = async ({ email, password }) => {
-  console.log(`${email}, ${password}`);
+  console.log(`Logging in with email: ${email}, password: ${password}`);
   try {
-    const { data } = await axios.post("/api/users/login", {
+    const { data } = await axios.post(`${BASE_URL}/api/users/login`, {
       email,
       password,
     });
     return data;
   } catch (error) {
-    // console.log(error.response.data);
-    if (error.response && error.response.data)
-      throw new Error(error.response.data);
-    throw new Error(error.response.data);
+    handleError(error);
   }
 };
 
@@ -39,14 +37,11 @@ export const getUserProfile = async ({ token }) => {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-      mode:"cors",
     };
-    const { data } = await axios.get("/api/users/profile", config);
+    const { data } = await axios.get(`${BASE_URL}/api/users/profile`, config);
     return data;
   } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
+    handleError(error);
   }
 };
 
@@ -57,17 +52,10 @@ export const updateProfile = async ({ token, userData }) => {
         Authorization: `Bearer ${token}`,
       },
     };
-
-    const { data } = await axios.put(
-      "/api/users/updateProfile",
-      userData,
-      config
-    );
+    const { data } = await axios.put(`${BASE_URL}/api/users/updateProfile`, userData, config);
     return data;
   } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
+    handleError(error);
   }
 };
 
@@ -79,16 +67,17 @@ export const updateProfilePicture = async ({ token, formData }) => {
         Authorization: `Bearer ${token}`,
       },
     };
-
-    const { data } = await axios.put(
-      "/api/users/updateProfilePicture",
-      formData,
-      config
-    );
+    const { data } = await axios.put(`${BASE_URL}/api/users/updateProfilePicture`, formData, config);
     return data;
   } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
+    handleError(error);
   }
+};
+
+// Error handling function
+const handleError = (error) => {
+  if (error.response && error.response.data && error.response.data.message) {
+    throw new Error(error.response.data.message);
+  }
+  throw new Error("An unexpected error occurred");
 };

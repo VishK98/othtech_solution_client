@@ -2,7 +2,7 @@
   "name": "inventory",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://othtech-solution-server.onrender.com",
+  "proxy": "http://localhost:4000",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@tanstack/react-query": "^4.28.0",
