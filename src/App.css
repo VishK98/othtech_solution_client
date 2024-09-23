@@ -164,6 +164,10 @@ body.dark {
     transition: 0.3s;
 }
 
+.sidebar .side-menu li a:hover{
+    color: #388e3c;
+}
+
 .sidebar .side-menu li.active a {
     color: var(--success);
 }
