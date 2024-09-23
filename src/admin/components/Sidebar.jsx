@@ -2,15 +2,16 @@ import React from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../store/actions/user";
+import logoImage from "../../assets/company_logo.png";
 
 const Sidebar = ({ isClosed }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const location = useLocation(); 
+  const location = useLocation();
 
   const logoutHandler = () => {
     dispatch(logout());
-    navigate("/"); 
+    navigate("/");
   };
 
   const isActive = (path) => {
@@ -19,12 +20,13 @@ const Sidebar = ({ isClosed }) => {
 
   return (
     <div className={`sidebar ${isClosed ? "close" : ""}`}>
-      <Link to="/dashboard" className="logo">
-        <i className="bx bx-code-alt"></i>
+      <Link to="/dashboard" className="logo" style={{marginLeft:"18px", marginTop:"5px"}}>
+        <img style={{height: "35px", width: "35px", marginRight:"10px"}} src={logoImage} alt="Inventory Logo" className="logo-image" />
         <div className="logo-name">
           <span>Inventory</span>
         </div>
       </Link>
+
       <ul className="side-menu">
         <li className={isActive("/dashboard")}>
           <Link to="/dashboard">

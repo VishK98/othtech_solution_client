@@ -110,6 +110,7 @@ body.dark {
     color: var(--dark);
 }
 
+
 .sidebar .logo .bx {
     min-width: 60px;
     display: flex;
@@ -165,7 +166,7 @@ body.dark {
 }
 
 .sidebar .side-menu li a:hover{
-    color: #388e3c;
+    color: #dbad10;
 }
 
 .sidebar .side-menu li.active a {
@@ -332,7 +333,7 @@ body.dark {
 }
 
 .content main .header .left .breadcrumb li a:hover {
-    color: #388e3c;
+    color: #dbad10;
 }
 
 
