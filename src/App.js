@@ -14,6 +14,15 @@ import FAQPage from "./pages/faq/Faq";
 
 // admin
 import Home from "./admin/pages/Home";
+import Categories from "./admin/pages/Categories";
+import Products from "./admin/pages/Products";
+import Purchases from "./admin/pages/Purchases";
+import Sales from "./admin/pages/Sales";
+import Billings from "./admin/pages/Billings";
+import Reports from "./admin/pages/Reports";
+import Settings from "./admin/pages/Settings";
+import Notification from "./admin/pages/Notification";
+import Profile from "./admin/pages/Profile";
 
 function App() {
   const location = useLocation();
@@ -36,6 +45,15 @@ function App() {
         <Route path="*" element={<HomePage />} />
         {/* admin routes */}
         <Route path="/dashboard" element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/purchases" element={<Purchases />} />
+        <Route path="/sales" element={<Sales />} />
+        <Route path="/billings" element={<Billings />} />
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/notifications" element={<Notification />} />
+        <Route path="/user-profile" element={<Profile />} />
       </Routes>
       <Toaster />
     </div>

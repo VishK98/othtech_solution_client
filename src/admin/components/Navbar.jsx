@@ -25,11 +25,11 @@ const Navbar = ({
         onChange={onDarkModeToggle}
       />
       <label htmlFor="theme-toggle" className="theme-toggle"></label>
-      <Link to="/messages" className="notif">
+      <Link to="/notifications" className="notif">
         <i className="bx bx-bell"></i>
         <span className="count">12</span>
       </Link>
-      <Link to="/profile" className="profile">
+      <Link to="/user-profile" className="profile">
         <img src="https://robohash.org/default.png" alt="Profile" />
       </Link>
     </nav>
