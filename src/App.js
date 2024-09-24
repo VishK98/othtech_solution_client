@@ -23,6 +23,7 @@ import Reports from "./admin/pages/Reports";
 import Settings from "./admin/pages/Settings";
 import Notification from "./admin/pages/Notification";
 import Profile from "./admin/pages/Profile";
+import AddProduct from "./admin/pages/AddProduct";
 
 function App() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notification />} />
         <Route path="/user-profile" element={<Profile />} />
+        <Route path="/add-product" element={<AddProduct />} />
       </Routes>
       <Toaster />
     </div>

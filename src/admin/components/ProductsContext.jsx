@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../../src/admin.css";
+import "../Css/admin.css";
+import { Link } from "react-router-dom";
 
 // Sample Table component to render table structure
 const Table = ({ headData, renderHead, bodyData, renderBody }) => (
@@ -251,12 +252,16 @@ const ProductsContext = () => {
           marginBottom: "10px",
         }}
       >
-        <h1 style={{ fontSize: "36px", fontWeight: "600", color: "(--dark)" }}>
-          Products
+        <h1 style={{ fontSize: "25px", fontWeight: "600", color: "(--dark)" }}>
+          PRODUCTS LIST
         </h1>
-        <button className="add-product" onClick={() => alert("Add Product Clicked")}>
-          ADD PRODUCT
-        </button>
+        <div className="submit-container">
+          <Link to="/add-product" style={{ textDecoration: "none" }}>
+            <button type="button" className="submit-button">
+              ADD PRODUCT
+            </button>
+          </Link>
+        </div>
       </div>
       <div className="items-per-page">
         <label htmlFor="items-per-page">Items per page :</label>

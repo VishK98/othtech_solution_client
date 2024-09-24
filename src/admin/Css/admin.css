@@ -104,21 +104,22 @@
     cursor: not-allowed;
   }
 
+  .submit-container {
+    grid-column: span 3;
+    /* Ensures the button spans all columns */
+    display: flex;
+    justify-content: flex-end;
+}
 
-  .add-product {
+.submit-button {
     padding: 10px 20px;
-    background-color: var(--primary);
-    font-size: 15px;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .add-product:hover {
-    background-color: transparent; 
-    color: black;
-    border: black 1px solid;
-  }
-  
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
