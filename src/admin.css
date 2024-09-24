@@ -103,3 +103,22 @@
     background-color: var(--light-primary);
     cursor: not-allowed;
   }
+
+
+  .add-product {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-product:hover {
+    background-color: transparent; 
+    color: black;
+    border: black 1px solid;
+  }
+  
