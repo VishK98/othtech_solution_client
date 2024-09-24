@@ -16,7 +16,7 @@ const ProductsContext = () => {
   const products = [
     {
       id: 1,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Led Bulb",
       category: "Electronics",
       subCategory: "Bulb",
@@ -28,7 +28,7 @@ const ProductsContext = () => {
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Smart phone",
       category: "Accessories",
       subCategory: "Gadget",
@@ -40,7 +40,7 @@ const ProductsContext = () => {
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Laptop",
       category: "Electronics",
       subCategory: "Computer",
@@ -52,7 +52,7 @@ const ProductsContext = () => {
     },
     {
       id: 4,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Tablet",
       category: "Electronics",
       subCategory: "Gadget",
@@ -64,7 +64,7 @@ const ProductsContext = () => {
     },
     {
       id: 5,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Smart Watch",
       category: "Accessories",
       subCategory: "Wearable",
@@ -76,7 +76,7 @@ const ProductsContext = () => {
     },
     {
       id: 6,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Wireless Earbuds",
       category: "Accessories",
       subCategory: "Audio",
@@ -88,7 +88,7 @@ const ProductsContext = () => {
     },
     {
       id: 7,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Bluetooth Speaker",
       category: "Audio",
       subCategory: "Speaker",
@@ -100,7 +100,7 @@ const ProductsContext = () => {
     },
     {
       id: 8,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "External Hard Drive",
       category: "Storage",
       subCategory: "Drive",
@@ -112,7 +112,7 @@ const ProductsContext = () => {
     },
     {
       id: 9,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "USB-C Charger",
       category: "Accessories",
       subCategory: "Charger",
@@ -124,7 +124,7 @@ const ProductsContext = () => {
     },
     {
       id: 10,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "HDMI Cable",
       category: "Accessories",
       subCategory: "Cable",
@@ -136,7 +136,7 @@ const ProductsContext = () => {
     },
     {
       id: 11,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Power Bank",
       category: "Accessories",
       subCategory: "Charger",
@@ -148,7 +148,7 @@ const ProductsContext = () => {
     },
     {
       id: 12,
-      image: "https://via.placeholder.com/50",
+      image: "https://m.media-amazon.com/images/I/71y1PJ2BCKL._AC._SR360,460.jpg",
       name: "Webcam",
       category: "Electronics",
       subCategory: "Camera",
