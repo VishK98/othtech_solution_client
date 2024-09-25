@@ -423,6 +423,7 @@ body.dark {
     background: var(--light);
     padding: 24px;
     overflow-x: auto;
+    width: 100vw;
 }
 
 .content main .bottom-data .header {
