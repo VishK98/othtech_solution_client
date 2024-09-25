@@ -42,8 +42,8 @@ const ProfileContext = () => {
 
   // Conditional styling for disabled inputs
   const disabledStyle = {
-    backgroundColor: "var(--grey)",
-    color: "#ccccc",
+    backgroundColor: "#E8E9EB",
+    color: "#A9A9A9",
   };
 
   return (
