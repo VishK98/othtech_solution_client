@@ -17,7 +17,7 @@ const AddProductContext = () => {
     const [expense, setExpense] = useState("");
     const [productCode, setProductCode] = useState("");
     const [taxMethod, setTaxMethod] = useState("");
-    const [image, setImage] = useState(null); 
+    const [image, setImage] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -48,7 +48,7 @@ const AddProductContext = () => {
                     <h1 style={{ marginBottom: "25px" }}>Add Product</h1>
                 </div>
             </div>
-            <div style={{width:"100%", height: "1.5px", backgroundColor: "var(--grey)", marginTop: "-15px", marginBottom: "20px"}}></div>
+            <div style={{ width: "100%", height: "1.5px", backgroundColor: "var(--grey)", marginTop: "-15px", marginBottom: "20px" }}></div>
 
             <form onSubmit={handleSubmit} className="product-form">
                 <div className="form-group">
@@ -190,12 +190,12 @@ const AddProductContext = () => {
                     <input
                         type="file"
                         accept="image/*"
-                        onChange={(e) => setImage(e.target.files[0])} 
+                        onChange={(e) => setImage(e.target.files[0])}
                         required
                     />
                 </div>
 
-                <div className="submit-container">
+                <div className="submit-container" style={{marginBottom:"30px"}}>
                     <button type="submit" className="submit-button">
                         CREATE PRODUCT
                     </button>

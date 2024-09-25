@@ -263,6 +263,8 @@ const ProductsContext = () => {
           </Link>
         </div>
       </div>
+      <div style={{ width: "100%", height: "1.1px", backgroundColor: "var(--grey)", marginTop: "20px", marginBottom: "25px" }}></div>
+
       <div className="items-per-page">
         <label htmlFor="items-per-page">Items per page :</label>
         <select
