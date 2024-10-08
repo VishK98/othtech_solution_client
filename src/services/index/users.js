@@ -1,8 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL; 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export const signup = async ({ name, email, password }) => {
+  console.log('I am here');
+  console.log(`Data ==>  name: ${name}, ${email}, password: ${password}`);
   try {
     const { data } = await axios.post(`${BASE_URL}/api/users/register`, {
       name,
