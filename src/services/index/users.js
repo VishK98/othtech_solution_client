@@ -1,8 +1,6 @@
 import axios from "axios";
 
-// Set your base API URL
-const BASE_URL = 'https://othtech-solution-server.onrender.com'; // render url
-// const BASE_URL = 'http://localhost:4000'; // local url
+const BASE_URL = process.env.REACT_APP_BASE_URL; 
 
 export const signup = async ({ name, email, password }) => {
   try {
